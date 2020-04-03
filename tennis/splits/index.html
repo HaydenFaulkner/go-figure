@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>splits</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<style>
+body {
+  margin: 0;
+}
+.split-vis text {
+  cursor: default;
+  text-anchor: "start";
+  font-family: 'Roboto', sans-serif;
+}
+
+.dark text {
+  fill: rgb(68, 68, 68);
+}
+
+.svg-train rect {
+  transition: 0.4s;
+}
+
+.svg-val rect {
+  transition: 0.4s;
+}
+
+.svg-test rect {
+  transition: 0.4s;
+}
+
+.svg-hover rect {
+  transition: 0.4s;
+  fill: rgb(219, 15, 209);
+}
+
+</style>
+
+
+<body>
+<svg class ="split-vis" width="849" height="139" xmlns="http://www.w3.org/2000/svg">
+  <g class="dark" font-size="14">
+    <text id="svg_66" y="36" x="12">01</text>
+    <text id="svg_67" y="87" x="12">02</text>
+    <text id="svg_128" y="62" x="78">V006</text>
+    <text id="svg_129" y="62" x="207">V007</text>
+    <text id="svg_130" y="62" x="311">V008</text>
+    <text id="svg_131" y="62" x="542">V009</text>
+    <text id="svg_132" y="62" x="780">V010</text>
+  </g>
+  
+  <g class="svg-videos" fill="#444444">
+    <rect id="svg_68" height="28" width="111" y="17" x="39"/>
+    <rect id="svg_70" height="28" width="122" y="17" x="160"/>
+    <rect id="svg_101" height="28" width="73" y="17" x="291"/>
+    <rect id="svg_72" height="28" width="364" y="17" x="372"/>
+    <rect id="svg_73" height="28" width="99" y="17" x="746"/>
+
+    <rect id="svg_102" height="28" width="111" y="68" x="39"/>
+    <rect id="svg_103" height="28" width="122" y="68" x="160"/>
+    <rect id="svg_108" height="28" width="73" y="68" x="291"/>
+    <rect id="svg_104" height="28" width="364" y="68" x="372"/>
+    <rect id="svg_105" height="28" width="99" y="68" x="746"/>
+  </g>
+
+  <g class="svg-whites">
+    <rect id="svg_83" height="20" width="84" y="21" x="758" fill="#ffffff" />
+
+    <rect id="svg_124" height="20" width="29" y="72" x="117" fill="#ffffff" />
+    <rect id="svg_121" height="20" width="30" y="72" x="250" fill="#ffffff" />
+    <rect id="svg_118" height="20" width="24" y="72" x="338" fill="#ffffff" />
+    <rect id="svg_112" height="20" width="95" y="72" x="640" fill="#ffffff" />
+    <rect id="svg_111" height="20" width="21" y="72" x="820" fill="#ffffff" />
+  </g>
+
+  <g class="svg-train" fill="#106eea">
+    <rect id="svg_74" height="20" width="84" y="21" x="62"/>
+    <rect id="svg_75" height="20" width="107" y="21" x="173"/>
+    <rect id="svg_76" height="20" width="69" y="21" x="292"/>
+    <rect id="svg_77" height="20" width="357" y="21" x="378"/>
+
+    <rect id="svg_106" height="20" width="55" y="72" x="62"/>
+    <rect id="svg_107" height="20" width="77" y="72" x="173"/>
+    <rect id="svg_109" height="20" width="46" y="72" x="292"/>
+    <rect id="svg_110" height="20" width="272" y="72" x="378"/>
+    <rect id="svg_117" height="20" width="62" y="72" x="758"/>
+
+    <rect id="svg_127" height="20" width="84" y="107" x="300"/>
+    <text id="svg_133" y="121" x="322" font-size="12" fill="#ffffff">training</text>
+  </g>
+
+  <g class="svg-val" fill="#106eea" fill-opacity="0.8">
+    <rect id="svg_78" height="20" width="30" y="21" x="758"/>
+    <rect id="svg_99" height="20" width="7" y="72" x="117"/>
+    <rect id="svg_97" height="20" width="4" y="72" x="250"/>
+    <rect id="svg_95" height="20" width="6" y="72" x="338"/>
+    <rect id="svg_94" height="20" width="17" y="72" x="650"/>
+    <rect id="svg_91" height="20" width="5" y="72" x="820"/>
+
+    <rect id="svg_84" height="20" width="84" y="107" x="390"/>
+    <text id="svg_134" y="121" x="406" font-size="12" fill="#ffffff">validation</text>
+  </g>
+
+  <g class="svg-test" fill="#106eea" fill-opacity="0.6">
+    <rect id="svg_79" height="20" width="54" y="21" x="788"/>
+    <rect id="svg_100" height="20" width="23" y="72" x="124"/>
+    <rect id="svg_98" height="20" width="26" y="72" x="254"/>
+    <rect id="svg_96" height="20" width="18" y="72" x="344"/>
+    <rect id="svg_93" height="20" width="68" y="72" x="667"/>
+    <rect id="svg_92" height="20" width="16" y="72" x="825"/>
+
+    <rect id="svg_85" height="20" width="84" y="107" x="480"/>
+    <text id="svg_135" y="121" x="502" font-size="12" fill="#ffffff">testing</text>
+  </g>
+</svg>
+
+<script src='./splits.js'></script>
+</body>
+</html>
